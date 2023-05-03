@@ -1,0 +1,63 @@
+body {
+  font-family: $main-font;
+  font-size: $font-size-md;
+}
+
+.container {
+  max-width: $content-width;
+  padding: 0 $content-x-padding;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.columnhalf {
+  display: flex;
+  width: 50%;
+  margin-top: 70px;
+  padding-left: 50px;
+}
+
+.columnhalf__content {
+  width: 75%;
+  margin: 0;
+}
+.columnhalf__img {
+  width: 25%;
+  margin: 0;
+  height: 100px;
+}
+
+@include desktop {
+  .container {
+    max-width: $breackpoint_xl;
+  }
+}
+
+@include laptop {
+  .container {
+    max-width: $breackpoint_md;
+  }
+}
+
+@include tablet {
+  .container {
+    max-width: $breackpoint_sm;
+  }
+}
+
+@include phone {
+  .container {
+    max-width: $breackpoint_sm;
+  }
+}
